@@ -1,11 +1,14 @@
 import { Outlet } from "react-router"
+import NavBar from "./components/Navbar/Navbar"
+import Footer from "./components/Footer/Footer"
 
 function App() {
 
   return (
     <>
-      <div>This is new app</div>
+      <NavBar/>
       <Outlet/>
+      <Footer/>
     </>
   )
 }

@@ -1,8 +1,10 @@
 import App from "@/App";
 import AllBooks from "@/pages/AllBooks/AllBooks";
 import Borrow from "@/pages/Borrow/Borrow";
+import BorrowSummary from "@/pages/BorrowSummary/BorrowSummary";
 import CreateBook from "@/pages/CreateBook/CreateBook";
 import EditBook from "@/pages/EditBook/EditBook";
+import Home from "@/pages/Home/Home";
 import SingleBook from "@/pages/SingleBook/SingleBook";
 import { createBrowserRouter } from "react-router";
 // import EditBook from "@/pages/EditBook/EditBook";
@@ -18,10 +20,10 @@ const router = createBrowserRouter([
         path: "/",
         Component: App,
         children: [
-            // {
-            //     index: true,
-            //     Component: Home
-            // },
+            {
+                index: true,
+                Component: Home
+            },
             {
                 path: "/books",
                 Component: AllBooks
@@ -38,10 +40,10 @@ const router = createBrowserRouter([
                 path: "/edit-book/:id",
                 Component: EditBook
             },
-            // {
-            //     path: "/borrow-summary",
-            //     Component: BorrowSummary
-            // },
+            {
+                path: "/borrow-summary",
+                Component: BorrowSummary
+            },
             {
                 path: "/borrow/:bookId",
                 Component: Borrow
