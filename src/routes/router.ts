@@ -1,4 +1,5 @@
 import App from "@/App";
+import CreateBook from "@/pages/CreateBook/CreateBook";
 import { createBrowserRouter } from "react-router";
 // import EditBook from "@/pages/EditBook/EditBook";
 // import AllBooks from "@/pages/AllBooks/AllBooks";
@@ -12,36 +13,36 @@ const router = createBrowserRouter([
     {
         path: "/",
         Component: App,
-        // children: [
-        //     {
-        //         index: true,
-        //         Component: Home
-        //     },
-        //     {
-        //         path: "/books",
-        //         Component: AllBooks
-        //     },
-        //     {
-        //         path: "/books/:id",
-        //         Component: SingleBook
-        //     },
-        //     {
-        //         path: "/create-book",
-        //         Component: CreateBook
-        //     },
-        //     {
-        //         path: "/edit-book/:id",
-        //         Component: EditBook
-        //     },
-        //     {
-        //         path: "/borrow-summary",
-        //         Component: BorrowSummary
-        //     },
-        //     {
-        //         path: "/borrow/:bookId",
-        //         Component: Borrow
-        //     }
-        // ]
+        children: [
+            // {
+            //     index: true,
+            //     Component: Home
+            // },
+            // {
+            //     path: "/books",
+            //     Component: AllBooks
+            // },
+            // {
+            //     path: "/books/:id",
+            //     Component: SingleBook
+            // },
+            {
+                path: "/create-book",
+                Component: CreateBook
+            },
+            // {
+            //     path: "/edit-book/:id",
+            //     Component: EditBook
+            // },
+            // {
+            //     path: "/borrow-summary",
+            //     Component: BorrowSummary
+            // },
+            // {
+            //     path: "/borrow/:bookId",
+            //     Component: Borrow
+            // }
+        ]
     }
 ]);
 
