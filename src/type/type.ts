@@ -8,3 +8,10 @@ export interface IBook {
     copies: number
     available: boolean
 };
+
+
+export interface IBorrow {
+    book: string,
+    quantity: number,
+    dueDate: Date
+}
