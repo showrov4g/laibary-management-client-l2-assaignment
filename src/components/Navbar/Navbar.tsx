@@ -1,8 +1,6 @@
 import { useState } from "react";
 import { NavLink } from "react-router";
-// import logoPic from "../../assets/logo.png";
-import { IoMdSearch } from "react-icons/io";
-import { GiShoppingCart } from "react-icons/gi";
+
 
 const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

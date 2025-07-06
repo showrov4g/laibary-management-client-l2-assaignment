@@ -46,7 +46,7 @@ const BookCard = ({ book }: BookProps) => {
                 <p><span className="font-medium">ISBN:</span> {book?.isbn}</p>
                 <p>
                     <span className="font-medium">Availability:</span>{" "}
-                    {book?.available ? (
+                    {book?.copies !== 0 ? (
                         <span className="text-green-600 font-semibold">Available</span>
                     ) : (
                         <span className="text-red-500 font-semibold">Unavailable</span>
@@ -81,7 +81,7 @@ const BookCard = ({ book }: BookProps) => {
                     <Button
                         className={`px-4 py-2 rounded-md cursor-pointer text-white ${book?.available ? "bg-green-600 hover:bg-green-500 focus:outline-none focus:ring-2 focus:ring-green-500" : "bg-gray-400 cursor-not-allowed"}`}
                         onClick={() => handleBorrow(book?._id)}
-                        disabled={!book?.available}
+                        disabled={book?.copies===0}
                     >
                         Borrow
                     </Button>
