@@ -59,9 +59,6 @@ const NavBar = () => {
       {isMenuOpen && (
         <div className="lg:hidden bg-base-100 shadow-md">
           <ul className="flex flex-col space-y-2 px-4 py-4 border-t">{links}</ul>
-          <div className="px-4 pb-4">
-            <button className="btn btn-primary w-full">Login</button>
-          </div>
         </div>
       )}
     </nav>
