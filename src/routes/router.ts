@@ -1,4 +1,5 @@
 import App from "@/App";
+import AllBooks from "@/pages/AllBooks/AllBooks";
 import CreateBook from "@/pages/CreateBook/CreateBook";
 import { createBrowserRouter } from "react-router";
 // import EditBook from "@/pages/EditBook/EditBook";
@@ -18,10 +19,10 @@ const router = createBrowserRouter([
             //     index: true,
             //     Component: Home
             // },
-            // {
-            //     path: "/books",
-            //     Component: AllBooks
-            // },
+            {
+                path: "/books",
+                Component: AllBooks
+            },
             // {
             //     path: "/books/:id",
             //     Component: SingleBook
