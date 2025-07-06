@@ -3,7 +3,7 @@
 A clean, responsive, and functional **Library Management System** built using **React**, **Redux Toolkit Query (RTK Query)**, and **TypeScript**.  
 This project demonstrates core CRUD functionality and borrow tracking without the complexity of authentication or payments—perfect for learning or rapid prototyping.
 
-![Library Banner](https://ibb.co/hQxBxjD) <!-- Replace with your own banner if needed -->
+![Library Banner](https://i.ibb.co/bwjsjZz/6899308.jpg) <!-- Replace with your own banner if needed -->
 
 ---
 
