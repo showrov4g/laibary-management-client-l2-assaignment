@@ -1,4 +1,3 @@
-// book interface 
 export interface IBook {
     _id: string,
     title: string,
@@ -10,15 +9,11 @@ export interface IBook {
     available: boolean
 };
 
-// borrow interface 
 export interface IBorrow {
     book: string,
     quantity: number,
     dueDate: Date
 }
-
-// all borrow book interface 
-
 
 export interface IAllBorrow {
     _id: string,
